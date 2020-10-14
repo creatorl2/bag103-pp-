@@ -1,11 +1,9 @@
-
-
 let myButton = document.querySelector('button');
 //let myTextArea = document.querySelector('textarea');
 myButton.onclick = function() {
     let aim = parseFloat(document.getElementById("aim").value);
     if (isNaN(aim)) {
-        alert("A number was not entered for 'aim'. \nPlese enter a value and run again. ")
+        alert("A number was not entered for 'aim'. \nPlese enter a value and run again.")
     }
     let speed = parseFloat(document.getElementById('speed').value);
     if (isNaN(speed)) {
