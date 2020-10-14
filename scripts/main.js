@@ -222,9 +222,9 @@ function ppcalc(c300, c100, c50, cMiss, combo, hd, dt, hr,
                     aimDiff = aimDiff * (accuracy**(4 - (od / 4)));
                     speedDiff = speedDiff * (accuracy**(6 - (od / 4)));
 
-                    aimDiff = aimDiff * (0.9 + (0.5 * Math.min(1, total_hits_over_2k)
+                    aimDiff = aimDiff * (0.9 + (0.45 * Math.min(1, total_hits_over_2k)
                                                     +  diffAddend));
-                    speedDiff = speedDiff * (0.9 + (0.5 * Math.min(1, total_hits_over_2_75k)
+                    speedDiff = speedDiff * (0.9 + (0.45 * Math.min(1, total_hits_over_2_75k)
                                                         + diffAddend));
                     console.log('aim' + aimDiff + 'speed' + speedDiff + 'post objcount')
 
