@@ -231,7 +231,7 @@ function ppcalc(c300, c100, c50, cMiss, combo, hd, dt, hr,
                     ///////////////////////////////////////
 
                     let objectcountMisscountScalar = (-0.01 + ((1/4/100) * (truecObj / 500)));
-                    let baseMissPenalty = 0.96;
+                    let baseMissPenalty = 0.97;
                     let minimumMissPenalty = 0.9925;
 
                     let missPenalty = baseMissPenalty + objectcountMisscountScalar;
