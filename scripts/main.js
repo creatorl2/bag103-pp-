@@ -1,9 +1,11 @@
+
+
 let myButton = document.querySelector('button');
 //let myTextArea = document.querySelector('textarea');
 myButton.onclick = function() {
     let aim = parseFloat(document.getElementById("aim").value);
     if (isNaN(aim)) {
-        alert("A number was not entered for 'aim'. \nPlese enter a value and run again. ")
+        alert("A number was not entered for 'aim'. \nPlese enter a value and run again.")
     }
     let speed = parseFloat(document.getElementById('speed').value);
     if (isNaN(speed)) {
@@ -212,7 +214,7 @@ function ppcalc(c300, c100, c50, cMiss, combo, hd, dt, hr,
 
                     let diffAddend;
                     if (cObj > 2000) {
-                        diffAddend = Math.log10(total_hits_over_2k) * 0.4;
+                        diffAddend = Math.log10(total_hits_over_2k) *;
                     } else {
                         diffAddend = 0.0;
                     }
@@ -300,6 +302,3 @@ function ppcalc(c300, c100, c50, cMiss, combo, hd, dt, hr,
                     return printString;
 
                 }
-
-
-
