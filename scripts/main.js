@@ -230,7 +230,7 @@ function ppcalc(c300, c100, c50, cMiss, combo, hd, dt, hr,
 
                     ///////////////////////////////////////
 
-                    let objectcountMisscountScalar = (-0.01 + ((1/4/100) * (cObj / 500)));
+                    let objectcountMisscountScalar = (-0.01 + ((1/4/100) * (truecObj / 500)));
                     let baseMissPenalty = 0.96;
                     let minimumMissPenalty = 0.9925;
 
@@ -239,7 +239,7 @@ function ppcalc(c300, c100, c50, cMiss, combo, hd, dt, hr,
                         missPenalty = minimumMissPenalty;
                     }
 
-                    let missMultiplier = missPenalty**(cMiss**0.66);
+                    let missMultiplier = missPenalty**(cMiss**0.9);
 
                     if (cMiss == 0) {
                         missMultiplier = 1;
