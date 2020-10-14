@@ -214,7 +214,7 @@ function ppcalc(c300, c100, c50, cMiss, combo, hd, dt, hr,
 
                     let diffAddend;
                     if (cObj > 2000) {
-                        diffAddend = Math.log10(total_hits_over_2k);
+                        diffAddend = Math.log10(total_hits_over_2k) * 0.4;
                     } else {
                         diffAddend = 0.0;
                     }
